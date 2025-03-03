@@ -1,2 +1,9 @@
 redis_url = "redis://localhost:6379/0"
 extra_modules = ["examples.experimental.app_world_agent.app_world_agent", "examples.experimental.nodes.scene_context_node", "examples.experimental.nodes.chat_print_node", "examples.experimental.nodes.app_world_node"]
+
+[[nodes]]
+node_name = "moderator"
+node_class = "moderator"
+
+[nodes.node_args]
+output_channels = ["moderator:Jane", "moderator:Jack"]
